@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Simple Portfolio with Photo</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+  }
+  header {
+    background: #333;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  header h1 {
+    color: #fff;
+    margin: 0;
+  }
+  nav {
+    margin-top: 0.5rem;
+  }
+  nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  section {
+    margin-bottom: 3rem;
+  }
+  h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.3rem;
+  }
+  #about {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  #about img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  .project {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .project h3 {
+    margin-top: 0;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: white;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 600px) {
+    nav a {
+      display: block;
+      margin: 0.5rem 0;
+    }
+    #about {
+      flex-direction: column;
+      text-align: center;
+    }
+    #about img {
+      margin-bottom: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Aditya singh</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <img src="dp.jpg"alt=" dp photo" />
+    <p>Hi! I'm Aditya singh, a web developer passionate about creating clean and simple websites.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project One</h3>
+      <p>A simple to-do list app made with HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project">
+      <h3>Project Two</h3>
+      <p>A responsive blog template built with pure CSS grid and flexbox.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: rajputadityasingh704@gmail.com</p>
+    <p>phone no:7488679190</p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Aditya singh
+</footer>
+</body>
+</html>
